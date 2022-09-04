@@ -1,0 +1,39 @@
+view{
+  height:600rpx;
+}
+.contain{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+button{
+  text-align: center;
+  margin-left: 600rpx;
+}
+
+
+.textArea{
+  display: flex;
+  height:110rpx;
+  flex-direction: row;
+  margin-top: 700rpx;
+}
+/*2-2文本输入框样式*/
+input{
+  border: 1rpx solid #987938;
+  flex-grow: 1;
+  height:100rpx;
+}
+/*2-3按钮样式*/
+button{
+  color:white;
+  background-color: #396f8f;
+}
+/*圆形组件*/
+.circle{
+    height: 35px;
+    border: 0 solid #ffffff;
+    border-radius: 500px;
+    box-shadow: 4px 1px 1px #cccccc;
+
+}

@@ -1,0 +1,20 @@
+<!--登陆面板-->
+<view id = "myLogin">
+  <block wx:if = "{{isLogin}}">
+    <image id = "myIcon"src="{{src}}"></image>
+    <text id = "nickName">{{nickName}}</text>
+  </block>
+  <button  wx:else open-type="getUserProfile"bindtap = 'getMyInfo' type = 'primary'>
+    未登录，点击登录
+  </button>
+</view>
+<!--我的图库-->
+<view id = "myImage">
+  <text>图鉴: </text>
+  <view id ="image-list">
+    <view class = 'list-item'wx:for = "{{image}}">
+      <image src = "{{item.url}}"></image>
+      <text>{{item.text}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<!--wxml-->
+<view class='circle'>
+  <image  src="{{image_url}}"></image>
+  <text class="contain"  user-select='true'>{{text_temp}}</text>
+</view>
+
+<!--设置文字-->
+<view class = "textArea">
+  <input type = "text"placeholder = "请给图片附上文字"bindinput = "getText"></input>
+  <button bindtap = "setText"style="width: 40%;">施法</button>
+</view>
+
+<button bindtap="uploadImage" class = "circle"size = "mini"mode="aspectFit" type="primary">+</button>
+
+<view>
+</view>
+
